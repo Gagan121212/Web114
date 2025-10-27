@@ -11,9 +11,10 @@ if (confirmed) {
         alert("20% off");
     } else if (total >= 50) {
         alert("10% off");
-    } else {
+    } else if(total >= 25) {
         alert("No discount");
     }
 } else {
     alert("You cancelled the confirmation. Please refresh to try again.");
 }
+
