@@ -17,11 +17,11 @@ const win = document.getElementById('win');
 
 // all the different pikachu pictures and moods
 const stages = [
-    { min: 0,   img: "images/pikachu.png", text: " Tiny sad Pikachu" },
-    { min: 25,  img: "images/stage1.png",  text: " Getting stronger!" },
-    { min: 50,  img: "images/stage2.jpeg",  text: " Happy and energetic!" },
-    { min: 75,  img: "images/stage3.png",  text: " Thunder stone nearby" },
-    { min: 100, img: "images/raichu.png",  text: " EVOLVED INTO RAICHU!" }
+    { min: 0,   img: "pikachu.png", text: " Tiny sad Pikachu" },
+    { min: 25,  img: "stage1.png",  text: " Getting stronger!" },
+    { min: 50,  img: "stage2.jpeg",  text: " Happy and energetic!" },
+    { min: 75,  img: "stage3.png",  text: " Thunder stone nearby" },
+    { min: 100, img: "raichu.png",  text: " EVOLVED INTO RAICHU!" }
 ];
 
 // this function changes the picture and the bar
@@ -96,4 +96,5 @@ document.getElementById("again").addEventListener("click", function() {
 });
 
 // start the game when page loads
+
 updatePikachu();
