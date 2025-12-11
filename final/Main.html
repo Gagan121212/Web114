@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolve Your Pikachu</title>
+    <link rel="stylesheet" href="style.css">   <!-- my styles -->
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Evolve your Pikachu!</h1>
+        <p class="subtitle">Answer some math to make him evolve</p>
+
+        <!-- pikachu picture changes as he grows -->
+        <img id="pikachu-image" src="images/pikachu.png" alt="pikachu">
+
+        <p id="mood">Mood: tiny cute pikachu...</p>
+
+        <div class="progress-bar">
+            <div id="progress"></div>   <!-- progress bar grows -->
+        </div>
+
+        <p>Happiness: <span id="happy">0</span>%</p>
+
+        <div id="question-box">
+            <p id="question">Click the button to start!</p>
+            <div id="answers" class="buttons"></div>   <!-- answer buttons go here -->
+            <button id="new-q">New Question</button>
+        </div>
+
+        <!-- only shows when you win -->
+        <div id="win" class="hidden">
+            <h2>Yay! It evolved into Raichu!!</h2>
+            <button id="again">Try Again?</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>   <!-- main game code -->
+</body>
+</html>

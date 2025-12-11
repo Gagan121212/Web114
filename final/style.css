@@ -1,0 +1,115 @@
+/* css for the pikachu evolve game */
+
+/* overall body style with gradient background */
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);  
+    text-align: center;
+    min-height: 100%;
+    padding: 30px 0;
+    color: #333;
+}
+
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    border: 5px solid #ffcb05;         
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+    color: orange;
+    letter-spacing: 2px;
+}
+
+/* pikachu picture */
+#pikachu-image {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    margin: 20px auto;
+    background: #fff9e6;
+    padding: 15px;
+    border-radius: 25px;
+    border: 4px solid #ffcb05;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* progress bar */
+.progress-bar {
+    width: 100%;
+    height: 38px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 25px 0;
+    border: 3px solid #333;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+    transition: width 0.8s ease;
+}
+
+/* question text */
+#question {
+    font-size: 2.2rem;
+    margin: 25px 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* answer buttons*/
+.buttons button {
+    font-size: 1.6rem;
+    padding: 16px 28px;
+    margin: 10px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.2s;
+}
+
+.buttons button:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+}
+
+/* new question button */
+#new-q {
+    padding: 14px 35px;
+    font-size: 1.4rem;
+    background: #e74c3c;
+    margin-top: 20px;
+}
+
+#new-q:hover {
+    background: #c0392b;
+}
+
+/* win screen */
+#win {
+    margin-top: 40px;
+    font-size: 2.3rem;
+    color: #2c3e50;
+}
+
+#win h2 {
+    color: #e74c3c;
+    text-shadow: 2px 2px 0 #f1c40f;
+}
+
+/* hide stuff */
+.hidden { display: none; }
